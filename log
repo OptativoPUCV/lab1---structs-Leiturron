@@ -35,3 +35,14 @@ Thu 14 Mar 2024 08:59:36 PM UTC:
  tests:  0|5
 total_score: 20/70
 cd8cac9
+Thu 14 Mar 2024 09:00:23 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:1:
+exercises.c: In function ‘filterEvenNumbers’:
+exercises.c:55:21: error: suggest parentheses around comparison in operand of ‘&’ [-Werror=parentheses]
+   55 |       if(arr[i] % 2 == 0 & arr[i] != 0)
+      |          ~~~~~~~~~~~^~~~
+cc1: all warnings being treated as errors
+Compilation failed
+cda783d
