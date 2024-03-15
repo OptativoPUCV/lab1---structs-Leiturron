@@ -111,13 +111,14 @@ int checkSorted(int arr[], int size)
   int record = 0;
   for(int i = 1; i < size - 1; i++)
     {
-      if(temp <= arr[i])
+      if(temp < arr[i])
       {
+        if(record == 0) record = 1;
         if(record != 1) return 0;
-        record = 1;
       }
-      else if(temp >= arr[i])
+      else if(temp > arr[i])
       {
+        if(record == 0) record = -1;
         if(record != -1) return 0;
         record = -1;
       }
