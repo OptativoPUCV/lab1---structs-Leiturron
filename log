@@ -189,3 +189,14 @@ Fri 15 Mar 2024 01:07:19 AM UTC:
  tests:  0|5
 total_score: 20/70
 0d6d276
+Fri 15 Mar 2024 01:08:05 AM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:1:
+exercises.c: In function ‘filterEvenNumbers’:
+exercises.c:58:17: error: assignment to ‘int’ from ‘int *’ makes integer from pointer without a cast [-Werror=int-conversion]
+   58 |         *arrPar = (int *) realloc(arrPar, sizeof(int) * (talla + 1));
+      |                 ^
+cc1: all warnings being treated as errors
+Compilation failed
+1025a5e
