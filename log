@@ -372,3 +372,9 @@ exercises.c:89:13: error: ‘newArr’ undeclared (first use in this function)
 exercises.c:89:13: note: each undeclared identifier is reported only once for each function it appears in
 Compilation failed
 8de0f14
+Fri 15 Mar 2024 03:04:39 AM UTC: 
+ exercises.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+ tests:  0|4
+total_score: 30/70
+1a3d619
