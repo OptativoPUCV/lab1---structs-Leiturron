@@ -328,3 +328,9 @@ exercises.c:69:10: error: ‘arrPar’ may be used uninitialized in this functio
 cc1: all warnings being treated as errors
 Compilation failed
 175017b
+Fri 15 Mar 2024 02:57:18 AM UTC: 
+ exercises.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+ tests:  0|5
+total_score: 20/70
+8e5243d
