@@ -60,7 +60,10 @@ int *filterEvenNumbers(int arr[], int size, int *newSize)
         talla += 1;
       }
     }
+  if(talla == 0) return NULL;
   *newSize = talla;
+  
+  
   printf("%d", talla);
   return arrPar; 
 }
