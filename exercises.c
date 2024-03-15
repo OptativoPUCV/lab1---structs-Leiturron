@@ -109,7 +109,7 @@ int checkSorted(int arr[], int size)
 {
   int temp = arr[0];
   int record = 0;
-  for(int i = 1; i < size - 1; i++)
+  for(int i = 1; i < size; i++)
     {
       if(temp < arr[i])
       {
