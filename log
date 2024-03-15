@@ -254,3 +254,17 @@ Fri 15 Mar 2024 02:48:52 AM UTC:
  tests:  0|5
 total_score: 20/70
 6d5fb97
+Fri 15 Mar 2024 02:49:18 AM UTC: 
+ exercises.c | 1 +
+ 1 file changed, 1 insertion(+)
+In file included from test.c:1:
+exercises.c: In function ‘filterEvenNumbers’:
+exercises.c:63:12: error: format ‘%d’ expects argument of type ‘int’, but argument 2 has type ‘int *’ [-Werror=format=]
+   63 |   printf("%d", &talla);
+      |           ~^   ~~~~~~
+      |            |   |
+      |            int int *
+      |           %ls
+cc1: all warnings being treated as errors
+Compilation failed
+410f74b
