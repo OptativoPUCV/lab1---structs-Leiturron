@@ -120,7 +120,6 @@ int checkSorted(int arr[], int size)
       {
         if(record == 0) record = -1;
         if(record != -1) return 0;
-        record = -1;
       }
       temp = arr[i];
     }
