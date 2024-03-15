@@ -314,3 +314,17 @@ exercises.c:69:10: error: ‘arrPar’ may be used uninitialized in this functio
 cc1: all warnings being treated as errors
 Compilation failed
 90b0856
+Fri 15 Mar 2024 02:56:39 AM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:1:
+exercises.c: In function ‘filterEvenNumbers’:
+exercises.c:69:10: error: returning ‘int’ from a function with return type ‘int *’ makes pointer from integer without a cast [-Werror=int-conversion]
+   69 |   return *arrPar;
+      |          ^~~~~~~
+exercises.c:69:10: error: ‘arrPar’ may be used uninitialized in this function [-Werror=maybe-uninitialized]
+   69 |   return *arrPar;
+      |          ^~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+175017b
