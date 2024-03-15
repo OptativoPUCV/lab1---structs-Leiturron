@@ -66,7 +66,7 @@ int *filterEvenNumbers(int arr[], int size, int *newSize)
   {
     printf(" %d", arrPar[i]);
   }
-  return arrPar; 
+  return *arrPar; 
 }
 
 /*
