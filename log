@@ -361,3 +361,14 @@ exercises.c:87:14: error: ‘arr’ undeclared (first use in this function); did
       |              arr2
 Compilation failed
 347584e
+Fri 15 Mar 2024 03:04:12 AM UTC: 
+ exercises.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+In file included from test.c:1:
+exercises.c: In function ‘mergeSortedArrays’:
+exercises.c:89:13: error: ‘newArr’ undeclared (first use in this function)
+   89 |             newArr[i] = arr1[j];
+      |             ^~~~~~
+exercises.c:89:13: note: each undeclared identifier is reported only once for each function it appears in
+Compilation failed
+8de0f14
