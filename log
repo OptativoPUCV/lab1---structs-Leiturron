@@ -303,3 +303,14 @@ exercises.c:69:10: error: returning ‘int’ from a function with return type �
 cc1: all warnings being treated as errors
 Compilation failed
 7ba95e8
+Fri 15 Mar 2024 02:54:52 AM UTC: 
+ exercises.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+In file included from test.c:1:
+exercises.c: In function ‘filterEvenNumbers’:
+exercises.c:69:10: error: ‘arrPar’ may be used uninitialized in this function [-Werror=maybe-uninitialized]
+   69 |   return arrPar;
+      |          ^~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+90b0856
