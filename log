@@ -346,3 +346,18 @@ Fri 15 Mar 2024 02:59:04 AM UTC:
  tests:  0|5
 total_score: 20/70
 5bb8ba8
+Fri 15 Mar 2024 03:03:40 AM UTC: 
+ exercises.c | 20 +++++++++++++++++++-
+ 1 file changed, 19 insertions(+), 1 deletion(-)
+In file included from test.c:1:
+exercises.c: In function ‘mergeSortedArrays’:
+exercises.c:82:3: error: ‘newArr’ undeclared (first use in this function)
+   82 |   newArr = (int *) malloc(sizeof(int) * (size1 + size2));
+      |   ^~~~~~
+exercises.c:82:3: note: each undeclared identifier is reported only once for each function it appears in
+exercises.c:87:14: error: ‘arr’ undeclared (first use in this function); did you mean ‘arr2’?
+   87 |           if(arr[j] < arr2[k] && j < size1)
+      |              ^~~
+      |              arr2
+Compilation failed
+347584e
