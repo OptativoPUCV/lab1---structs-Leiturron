@@ -49,6 +49,7 @@ newsize apunta a una dirección válida que no ha sido inicializada con nigún v
 */
 int *filterEvenNumbers(int arr[], int size, int *newSize) 
 {
+  /* CON REALLOC NO FUNCIONA
   int *arrPar = NULL;
   int talla = 0;
   for(int i = 0; i < size; i++)
@@ -62,12 +63,32 @@ int *filterEvenNumbers(int arr[], int size, int *newSize)
     }
   (*newSize) = talla;
   //printf("%d", *newSize);
-  /*
   for(int i = 0; i < *newSize; i++)
   {
     printf(" %d", arrPar[i]);
   }
-  */
+  */ // CON REALLOC NO FUNCIONA
+  int *arrPar = NULL;
+  int talla = 0;
+  for(int i = 0; i < size; i++)
+  {
+    if(arr[i] % 2 == 0 && arr[i] != 0)
+    {
+      talla++;
+    }
+  }
+  arrPar = (int *) malloc(sizeof(int) * talla);
+  (*newSize) = talla;
+  for(int i = 0, k = 0; i < size; i++)
+  {
+    if(arr[i] % 2 == 0 && arr[i] != 0)
+    {
+      arrPar[k] = arr[i];
+      k++;
+    }
+  }
+  
+  
   return arrPar; 
 }
 
